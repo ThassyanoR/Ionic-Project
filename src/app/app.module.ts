@@ -25,6 +25,7 @@ import {TripDetailPage} from "../pages/trip-detail/trip-detail";
 import {TripsPage} from "../pages/trips/trips";
 import {LocalWeatherPage} from "../pages/local-weather/local-weather";
 import { CartelaPage } from "../pages/cartela/cartela";
+import { FeedPageModule } from "../pages/feed/feed.module";
 
 // import services
 // end import services
@@ -56,6 +57,7 @@ import { CartelaPage } from "../pages/cartela/cartela";
       scrollAssist: true,
       autoFocusAssist: false
     }),
+    FeedPageModule,
     IonicStorageModule.forRoot({
       name: '__ionic3_start_theme',
         driverOrder: ['indexeddb', 'sqlite', 'websql']
