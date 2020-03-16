@@ -26,6 +26,8 @@ import {TripsPage} from "../pages/trips/trips";
 import {LocalWeatherPage} from "../pages/local-weather/local-weather";
 import { CartelaPage } from "../pages/cartela/cartela";
 import { FeedPageModule } from "../pages/feed/feed.module";
+import { FeedPage } from "../pages/feed/feed";
+import { TabsPage } from "../pages/tabs/tabs";
 
 // import services
 // end import services
@@ -47,7 +49,8 @@ import { FeedPageModule } from "../pages/feed/feed.module";
     SearchLocationPage,
     TripDetailPage,
     TripsPage,
-    CartelaPage
+    CartelaPage,
+    TabsPage
   ],
   imports: [
     BrowserModule,
@@ -76,7 +79,8 @@ import { FeedPageModule } from "../pages/feed/feed.module";
     SearchLocationPage,
     TripDetailPage,
     TripsPage,
-    CartelaPage
+    CartelaPage,
+    TabsPage
   ],
   providers: [
     StatusBar,
