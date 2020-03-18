@@ -1,4 +1,3 @@
-<!-- -->
 <ion-header>
   <ion-navbar color="primary">
     <button ion-button menuToggle>
@@ -30,15 +29,12 @@
       <ion-datetime class="no-pl" displayFormat="DD/MM/YYYY" pickerFormat="DD/MM/YYYY" [(ngModel)]="search.date"></ion-datetime>
     </ion-item>
   </ion-card>
+  
 
+  
   <button ion-button icon-start block no-margin color="primary" class="round" tappable (click)="doSearch()">
     <ion-icon name="search"></ion-icon> Pesquisar
   </button>
-  <ion-footer>
-    <ion-tabs>
-       <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>
-       <ion-tab [root]="tab2Root" tabTitle="Feed" tabIcon="paper"></ion-tab>
-       <ion-tab [root]="tab3Root" tabTitle="About" tabIcon="information-circle"></ion-tab>
-       </ion-tabs>
-   </ion-footer>
+
+
 </ion-content>
