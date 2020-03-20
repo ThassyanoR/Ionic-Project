@@ -30,7 +30,9 @@ import { MinhasRifasPage } from "../pages/minhas-rifas/minhas-rifas";
 import { RifaCompradaPage } from "../pages/rifa-comprada/rifa-comprada";
 import { PerfilPage } from "../pages/perfil/perfil";
 import { RlTagInputModule} from "angular2-tag-input";
-
+import { FeedPageModule } from "../pages/feed/feed.module";
+import { FeedPage } from "../pages/feed/feed";
+import { TabsPage } from "../pages/tabs/tabs";
 // import services
 // end import services
 // end import services
@@ -55,7 +57,8 @@ import { RlTagInputModule} from "angular2-tag-input";
     ConfirmaDadosPage,
     MinhasRifasPage,
     RifaCompradaPage,
-    PerfilPage
+    PerfilPage,
+    TabsPage
 
 
   ],
@@ -67,6 +70,7 @@ import { RlTagInputModule} from "angular2-tag-input";
       scrollAssist: true,
       autoFocusAssist: false
     }),
+    FeedPageModule,
     IonicStorageModule.forRoot({
       name: '__ionic3_start_theme',
         driverOrder: ['indexeddb', 'sqlite', 'websql']
@@ -92,6 +96,7 @@ import { RlTagInputModule} from "angular2-tag-input";
     MinhasRifasPage,
     RifaCompradaPage,
     PerfilPage,
+    TabsPage
  
   ],
   providers: [
