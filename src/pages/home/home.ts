@@ -22,10 +22,10 @@ export class HomePage {
     date: new Date().toISOString()
   }
   
-
+  
   public trips: any;
 
-
+  
   constructor(private storage: Storage, public nav: NavController, public popoverCtrl: PopoverController, public tripService: TripService) {
  
     this.trips = tripService.getAll();

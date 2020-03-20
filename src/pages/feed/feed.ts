@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
-import {IonicPage,NavController,NavParams,ActionSheetController } from 'ionic-angular';
+import {IonicPage,NavController,PopoverController,NavParams,ActionSheetController } from 'ionic-angular';
+
+import {NotificationsPage} from "../notifications/notifications";
+import {SettingsPage} from "../settings/settings";
+
 @IonicPage()
 @Component({
   selector: 'page-feed',
@@ -7,11 +11,15 @@ import {IonicPage,NavController,NavParams,ActionSheetController } from 'ionic-an
 })
 export class FeedPage {
 
-  constructor(public navCtrl:NavController,public navParams: NavParams,public actionSheetController:ActionSheetController){
+  constructor(public navCtrl:NavController,public nav: NavController,public navParams: NavParams,public popoverCtrl: PopoverController, public actionSheetController:ActionSheetController){
 
   }
   ionViewDidLoad(){
     console.log('ionViewDidLoad FeedPage')
+  }
+  // to go account page
+  goToAccount() {
+    this.nav.push(SettingsPage);
   }
   presentActionSheet() {
     const actionSheet = this.actionSheetController.create({ 
@@ -45,5 +53,12 @@ export class FeedPage {
       }]
     });
     actionSheet.present();
+  }
+  presentNotifications(myEvent) {
+    console.log(myEvent);
+    let popover = this.popoverCtrl.create(NotificationsPage);
+    popover.present({
+      ev: myEvent
+    });
   }
 }
