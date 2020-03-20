@@ -47,12 +47,17 @@
     <ion-icon name="md-car" item-start></ion-icon>Carros
   </button>
  </ion-list>
- <ion-footer>
-  <button ion-button shape="round" expand="full" (click)=
+  <ion-fab bottom right  mini>
+  <button ion-fab tappable (click)= "presentActionSheet()" >
+    <ion-icon name="md-add"></ion-icon>
+  </button>
+  </ion-fab>
+
+ <!-- <button ion-button shape="round" expand="full" (click)=
     "presentActionSheet()">
     <ion-icon name="md-add">Minhas Rifas</ion-icon>
-  </button>
-</ion-footer>
+  </button>-->
+
 
 
 
