@@ -1,5 +1,5 @@
 import {Component} from "@angular/core";
-import {NavController, PopoverController} from "ionic-angular";
+import {NavController, PopoverController, ActionSheetController} from "ionic-angular";
 import {Storage} from '@ionic/storage';
 
 import {NotificationsPage} from "../notifications/notifications";
@@ -20,10 +20,11 @@ export class HomePage {
     name: "Relógios, Carros, Viagens",
     date: new Date().toISOString()
   }
-
+  
+  
   public trips: any;
 
-
+  
   constructor(private storage: Storage, public nav: NavController, public popoverCtrl: PopoverController, public tripService: TripService) {
  
     this.trips = tripService.getAll();
@@ -69,7 +70,7 @@ export class HomePage {
       ev: myEvent
     });
   }
-
+  
 }
 
 //
