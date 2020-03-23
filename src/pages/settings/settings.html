@@ -1,11 +1,15 @@
-<!-- -->
-<ion-header class="no-shadow">
 
-  <ion-navbar class="no-border">
+<ion-header>
+  <ion-navbar  color="primary">
+    <ion-buttons left>
+      <button ion-button icon-only (click)="goHome()">
+          <ion-icon name="arrow-back"></ion-icon>
+      </button>
+  </ion-buttons>
     <ion-title>
-      <ion-icon name="cog" class="text-primary"></ion-icon>
-      <span class="text-primary">Configurações</span>
+      <span ion-text>Configurações</span>
     </ion-title>
+    
   </ion-navbar>
 
 </ion-header>
