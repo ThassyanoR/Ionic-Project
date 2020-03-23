@@ -10,6 +10,7 @@ import { LoginPage } from "../pages/login/login";
 import { LocalWeatherPage } from "../pages/local-weather/local-weather";
 import { MinhasRifasPage } from "../pages/minhas-rifas/minhas-rifas";
 import { PerfilPage } from "../pages/perfil/perfil";
+import { SettingsPage } from "../pages/settings/settings";
 
 export interface MenuItem {
    
@@ -46,6 +47,7 @@ export class MyApp {
      // {title: 'Local Weather', component: LocalWeatherPage, icon: 'partly-sunny'}
       {title: 'Minhas Rifas', component: MinhasRifasPage, icon: 'pricetags'},
       {title: 'Perfil', component: PerfilPage, icon: 'person'},
+      {title: 'Configurações', component: SettingsPage, icon: 'md-settings'},
     ];
   }
 
