@@ -8,14 +8,10 @@ import { Keyboard } from '@ionic-native/keyboard';
 import { HomePage } from "../pages/home/home";
 import { LoginPage } from "../pages/login/login";
 import { LocalWeatherPage } from "../pages/local-weather/local-weather";
-<<<<<<< HEAD
 import { MinhasRifasPage } from "../pages/minhas-rifas/minhas-rifas";
 import { PerfilPage } from "../pages/perfil/perfil";
 import { SettingsPage } from "../pages/settings/settings";
 
-=======
-import { TabsPage } from "../pages/tabs/tabs";
->>>>>>> 0be0bfd7da1ab262a608c0d3c8bf70e7c3da4c0f
 export interface MenuItem {
    
     title: string;
@@ -32,7 +28,7 @@ export interface MenuItem {
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
   
-  rootPage= TabsPage;
+  rootPage: any = LoginPage;
    
   appMenuItems: Array<MenuItem>;
 
