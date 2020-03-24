@@ -1,5 +1,6 @@
 import {Component} from "@angular/core";
-import {ViewController} from "ionic-angular";
+import {ViewController, NavController} from "ionic-angular";
+import { HomePage } from "../home/home";
 
 @Component({
   selector: 'page-notifications',
@@ -7,9 +8,10 @@ import {ViewController} from "ionic-angular";
 })
 
 export class NotificationsPage {
-  constructor(public viewCtrl: ViewController) {}
+  constructor(public viewCtrl: ViewController,public nav:NavController) {}
 
   close() {
     this.viewCtrl.dismiss();
   }
+  
 }

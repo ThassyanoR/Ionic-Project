@@ -11,6 +11,7 @@ import { LocalWeatherPage } from "../pages/local-weather/local-weather";
 import { MinhasRifasPage } from "../pages/minhas-rifas/minhas-rifas";
 import { PerfilPage } from "../pages/perfil/perfil";
 import { SettingsPage } from "../pages/settings/settings";
+import { NotificationsPage } from "../pages/notifications/notifications";
 
 export interface MenuItem {
    
@@ -43,10 +44,11 @@ export class MyApp {
     this.appMenuItems = [
       {title: 'Home', component: HomePage, icon: 'home'},
      // {title: 'Local Weather', component: LocalWeatherPage, icon: 'partly-sunny'}
-      {title: 'Minhas Rifas', component: MinhasRifasPage, icon: 'pricetags'},
-      {title: 'Perfil', component: PerfilPage, icon: 'person'},
-      {title: 'Configurações', component: SettingsPage, icon: 'md-settings'},
-      //{title;'Cartões de Crédito',component:CartõesPage,icon:'md-card'}, <<<
+      {title:'Minhas Rifas', component: MinhasRifasPage, icon: 'pricetags'},
+      {title:'Minha Conta', component: PerfilPage, icon: 'person'},
+      {title:'Configurações', component: SettingsPage, icon: 'md-settings'},
+      {title:'Cartões de Crédito', component: NotificationsPage, icon:'card'}, 
+      //{title;'Cartões de Crédito',component:CartõesPage,icon:'md-card'},
     ];
   }
 

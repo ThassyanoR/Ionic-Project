@@ -1,13 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
+import { AlterarPage } from '../alterar_perfil/alterar';
+import { MinhasRifasPage } from '../minhas-rifas/minhas-rifas';
 
-/**
- * Generated class for the PerfilPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+
 
 @IonicPage()
 @Component({
@@ -26,5 +23,10 @@ export class PerfilPage {
   goHome(){
     this.nav.setRoot(HomePage);
   }
-
+  goAlterar() {
+    this.nav.setRoot(AlterarPage);
+  }
+  goMinhasRifas() {
+    this.nav.setRoot(MinhasRifasPage);
+  }
 }

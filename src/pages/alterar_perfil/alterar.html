@@ -1,0 +1,60 @@
+<ion-header>
+
+  <ion-navbar  color="primary">
+    <ion-buttons left>
+      <button ion-button icon-only (click)="goHome()">
+          <ion-icon name="arrow-back"></ion-icon>
+      </button>
+  </ion-buttons>
+    <ion-title>
+      <span ion-text>Meus dados</span>
+    </ion-title>
+    
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding  class="common-bg">
+  <div class="card round" margin-top>
+<ion-list no-margin>
+      <ion-item class="primary-bg">
+      <!-- <ion-avatar item-start>
+          <img src="assets/img/avatar.jpeg">
+        </ion-avatar>  -->
+        <h2 ion-text class="text-white bold">Cléia</h2>
+       <!--  <p ion-text class="text-secondary bold">User</p>--> 
+      </ion-item>
+    </ion-list>
+
+   <div padding>
+      <ion-item no-padding>
+        <ion-label color="dark" stacked>Nome completo</ion-label>
+        <ion-input type="text"  value=""></ion-input>
+      </ion-item>
+      <ion-item no-padding>
+        <ion-label color="dark" stacked>CPF</ion-label>
+        <ion-input type="text" placeholder="000.000.00-00" value=""></ion-input>
+      </ion-item>
+      <ion-item no-padding>
+        <ion-label color="dark" stacked>RG</ion-label>
+        <ion-input type="text"  value=""></ion-input>
+      </ion-item>
+      <ion-item no-padding>
+        <ion-label color="dark" stacked>E-mail para contato</ion-label>
+        <ion-input type="text"  value=""></ion-input>
+      </ion-item>
+      <ion-item no-padding>
+        <ion-label color="dark" stacked>Data de Nascimento</ion-label>
+        <ion-input type="text" placeholder="00/00/0000" value=""></ion-input>
+      </ion-item>
+      <ion-item no-padding>
+        <ion-label color="dark" stacked>CEP</ion-label>
+        <ion-input type="text"  value=""></ion-input>
+      </ion-item>
+    </div> 
+  </div>
+     <div padding style="padding-top: 0px;">
+    <button ion-button class="round" color="primary" margin-top full tappable (click)="presentConfirm()">Salvar Alterações</button>
+  <div class="clear"></div>
+  </div>
+</ion-content>

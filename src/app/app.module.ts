@@ -31,6 +31,7 @@ import { RifaCompradaPage } from "../pages/rifa-comprada/rifa-comprada";
 import { PerfilPage } from "../pages/perfil/perfil";
 import { RlTagInputModule} from "angular2-tag-input";
 import { RifaPremiadaPage } from "../pages/rifa-premiada/rifa-premiada";
+import { AlterarPage } from "../pages/alterar_perfil/alterar";
 
 // import services
 // end import services
@@ -57,7 +58,8 @@ import { RifaPremiadaPage } from "../pages/rifa-premiada/rifa-premiada";
     MinhasRifasPage,
     RifaCompradaPage,
     PerfilPage,
-    RifaPremiadaPage
+    RifaPremiadaPage,
+    AlterarPage,
 
 
   ],
@@ -94,7 +96,8 @@ import { RifaPremiadaPage } from "../pages/rifa-premiada/rifa-premiada";
     MinhasRifasPage,
     RifaCompradaPage,
     PerfilPage,
-    RifaPremiadaPage
+    RifaPremiadaPage,
+    AlterarPage,
  
   ],
   providers: [
