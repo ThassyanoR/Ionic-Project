@@ -30,14 +30,8 @@ import { MinhasRifasPage } from "../pages/minhas-rifas/minhas-rifas";
 import { RifaCompradaPage } from "../pages/rifa-comprada/rifa-comprada";
 import { PerfilPage } from "../pages/perfil/perfil";
 import { RlTagInputModule} from "angular2-tag-input";
-<<<<<<< HEAD
 import { RifaPremiadaPage } from "../pages/rifa-premiada/rifa-premiada";
 
-=======
-import { FeedPageModule } from "../pages/feed/feed.module";
-import { FeedPage } from "../pages/feed/feed";
-import { TabsPage } from "../pages/tabs/tabs";
->>>>>>> 0be0bfd7da1ab262a608c0d3c8bf70e7c3da4c0f
 // import services
 // end import services
 // end import services
@@ -63,11 +57,7 @@ import { TabsPage } from "../pages/tabs/tabs";
     MinhasRifasPage,
     RifaCompradaPage,
     PerfilPage,
-<<<<<<< HEAD
     RifaPremiadaPage
-=======
-    TabsPage
->>>>>>> 0be0bfd7da1ab262a608c0d3c8bf70e7c3da4c0f
 
 
   ],
@@ -79,7 +69,6 @@ import { TabsPage } from "../pages/tabs/tabs";
       scrollAssist: true,
       autoFocusAssist: false
     }),
-    FeedPageModule,
     IonicStorageModule.forRoot({
       name: '__ionic3_start_theme',
         driverOrder: ['indexeddb', 'sqlite', 'websql']
@@ -105,11 +94,7 @@ import { TabsPage } from "../pages/tabs/tabs";
     MinhasRifasPage,
     RifaCompradaPage,
     PerfilPage,
-<<<<<<< HEAD
     RifaPremiadaPage
-=======
-    TabsPage
->>>>>>> 0be0bfd7da1ab262a608c0d3c8bf70e7c3da4c0f
  
   ],
   providers: [
