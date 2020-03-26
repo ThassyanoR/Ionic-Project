@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
 import { AlertController } from 'ionic-angular';
+import { findLast } from '@angular/compiler/src/directive_resolver';
+import { PerfilPage } from '../perfil/perfil';
 
 
 @IonicPage()
@@ -20,6 +22,9 @@ export class AlterarPage {
   }
   goHome(){
     this.nav.setRoot(HomePage);
+  }
+  historyRoot(){
+    this.nav.setRoot(PerfilPage);
   }
   presentConfirm() {
     let alert = this.alertCtrl.create({

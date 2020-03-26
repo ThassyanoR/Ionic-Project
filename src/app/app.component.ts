@@ -47,7 +47,6 @@ export class MyApp {
       {title:'Minhas Rifas', component: MinhasRifasPage, icon: 'pricetags'},
       {title:'Minha Conta', component: PerfilPage, icon: 'person'},
       {title:'Configurações', component: SettingsPage, icon: 'md-settings'},
-      {title:'Cartões de Crédito', component: NotificationsPage, icon:'card'}, 
       //{title;'Cartões de Crédito',component:CartõesPage,icon:'md-card'},
     ];
   }
