@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
 import { AlterarPage } from '../alterar_perfil/alterar';
 import { MinhasRifasPage } from '../minhas-rifas/minhas-rifas';
+import { FavoritosPage } from '../favoritos/favoritos';
 
 
 
@@ -28,5 +29,8 @@ export class PerfilPage {
   }
   goMinhasRifas() {
     this.nav.setRoot(MinhasRifasPage);
+  }
+  goFavoritos(){
+    this.nav.setRoot(FavoritosPage);
   }
 }

@@ -32,6 +32,7 @@ import { PerfilPage } from "../pages/perfil/perfil";
 import { RlTagInputModule} from "angular2-tag-input";
 import { RifaPremiadaPage } from "../pages/rifa-premiada/rifa-premiada";
 import { AlterarPage } from "../pages/alterar_perfil/alterar";
+import { FavoritosPage } from "../pages/favoritos/favoritos";
 
 // import services
 // end import services
@@ -60,6 +61,7 @@ import { AlterarPage } from "../pages/alterar_perfil/alterar";
     PerfilPage,
     RifaPremiadaPage,
     AlterarPage,
+    FavoritosPage,
 
 
   ],
@@ -98,6 +100,7 @@ import { AlterarPage } from "../pages/alterar_perfil/alterar";
     PerfilPage,
     RifaPremiadaPage,
     AlterarPage,
+    FavoritosPage,
  
   ],
   providers: [
